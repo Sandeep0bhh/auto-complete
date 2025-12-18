@@ -1,12 +1,12 @@
-# My Auto Complete
+# Auto Complete
 
 > Original Repos:   
-> - My Auto Complete: https://github.com/a19836/auto-complete/   
+> - Auto Complete: https://github.com/a19836/auto-complete/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
 
-**My Auto Complete** is a lightweight JavaScript library that transforms a text box into a smart autocomplete field, displaying matching suggestions in a dropdown list to make user selection faster and easier as you type.
+**Auto Complete** is a lightweight JavaScript library that transforms a text box into a smart autocomplete field, displaying matching suggestions in a dropdown list to make user selection faster and easier as you type.
 
 Check out a live example by opening [index.html](index.html).
 

